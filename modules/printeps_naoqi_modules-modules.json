@@ -1,0 +1,1023 @@
+{
+  "modules" : {
+    "rosservice.printeps/naoqi/voicetotext" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "text",
+          "type" : "string"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi Google音声認識",
+        "description" : " pepper/naoが音声を録音して、google apiに投げる",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/voicetotext",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "key",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/voicetotext",
+        "service_type" : "VoiceToText",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/pubtractiltouched" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 頭が触られたことをパブリッシュ",
+        "description" : " pepper/naoが頭を触られたことをpubする",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/pubtractiltouched",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/pubtractiltouched",
+        "service_type" : "PubTractilTouched",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/showwebview" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Pepper タブレットに指定URLのWebページを表示",
+        "description" : " pepperのwebビューを表示して、指定されたURLを表示する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/showwebview",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "url",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/showwebview",
+        "service_type" : "ShowWebView",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/jwoqa_1step" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "answers",
+          "type" : "string[]"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi JWOに質問を投げる",
+        "description" : " jwoに質問を投げて、リクエストもらって処理する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/jwoqa_1step",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "question",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/jwoqa_1step",
+        "service_type" : "JWOQA_1Step",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/voicestreamtotext" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "text",
+          "type" : "string"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi Googleストリーム音声認識",
+        "description" : " pepper/naoが音声を録音して、google apiに投げる(たぶんストリーミング認識？)",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/voicestreamtotext",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "key",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/voicestreamtotext",
+        "service_type" : "VoiceStreamToText",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/rest" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 待機状態にする",
+        "description" : " pepper/naoを待機状態にする",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/rest",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/rest",
+        "service_type" : "Rest",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/autonomouslife" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqiオートノマス設定",
+        "description" : " pepper/naoのオートノマスを設定",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/autonomouslife",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "state",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/autonomouslife",
+        "service_type" : "AutonomousLife",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/setvolume" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi音量設定",
+        "description" : " pepper/naoの音量設定",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/setvolume",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "volume",
+          "type" : "int32"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/setvolume",
+        "service_type" : "SetVolume",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rostopic_subscriber.naoqi_tractiltouched" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "flow",
+          "name" : "output",
+          "type" : "std_msgs/Bool"
+        }
+      ],
+      "info" : {
+        "name" : "Subscribe naoqi_tractiltouched",
+        "description" : "Pepper/NAOの頭がタッチされたらPublish",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2018-10-31 23:49:41",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2018-10-31 23:48:54"
+      },
+      "id" : "rostopic_subscriber.naoqi_tractiltouched",
+      "inputs" : [],
+      "properties" : [],
+      "ext" : {
+        "topic_name" : "naoqi_tractiltouched",
+        "msg_package" : "std_msgs.msg",
+        "actor_class" : ""
+      },
+      "shape" : "rostopic_sub"
+    },
+    "rosservice.printeps/naoqi/voicetotextdummy" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 音声認識のふりをする",
+        "description" : " pepper/naoが音声認識するふりをする",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/voicetotextdummy",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "sec",
+          "type" : "float32"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/voicetotextdummy",
+        "service_type" : "VoiceToTextDummy",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/touchwhichhand" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "hand",
+          "type" : "bool"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi どちらかの手を触られたことを認識",
+        "description" : " pepper/naoが左右どちらの手を触られたかを認識する(左手はtrue, 右手はfalse)",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/touchwhichhand",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/touchwhichhand",
+        "service_type" : "TouchWhichHand",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/behaviorspeech" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi動作付き発話",
+        "description" : " pepper/naoが指定されたテキストを喋りながら動作を行う",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/behaviorspeech",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "text",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "behavior",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/behaviorspeech",
+        "service_type" : "BehaviorSpeech",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/pubrfrontmicenergy" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 音量をパブリッシュ",
+        "description" : " pepper/naoが音量をpubする",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/pubrfrontmicenergy",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/pubrfrontmicenergy",
+        "service_type" : "PubFrontMicEnergy",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/wordrecognition" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "recog_result",
+          "type" : "string"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 音声認識結果とテキストの比較",
+        "description" : " 与えられた文字列を音声認識の結果と比較する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/wordrecognition",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "words",
+          "type" : "string[]"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/wordrecognition",
+        "service_type" : "WordRecognition",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/audioplay" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi音声ファイル再生",
+        "description" : " pepper/nao内のhome/nao/wav/に保存された音声ファイルを再生",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/audioplay",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "filename",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/audioplay",
+        "service_type" : "AudioPlay",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/touchhead" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 頭を触られたことを認識",
+        "description" : " pepper/naoが頭を触られたことを認識する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/touchhead",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/touchhead",
+        "service_type" : "TouchHead",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/behavior" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi指定動作実行",
+        "description" : " pepper/naoが指定された動作を行う",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/behavior",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "behavior",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/behavior",
+        "service_type" : "Behavior",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/wakeup" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 起動状態にする",
+        "description" : " pepper/naoを起動状態にする",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/wakeup",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/wakeup",
+        "service_type" : "Wakeup",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/hidewebview" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " PepperタブレットWebビューを閉じる",
+        "description" : " pepperのタブレットのwebビューを閉じる",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/hidewebview",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/hidewebview",
+        "service_type" : "HideWebView",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/randombehaviorspeech" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi ランダム動作付き発話",
+        "description" : " pepper/naoが適当な動作をおこないながら喋る",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/randombehaviorspeech",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "text",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/randombehaviorspeech",
+        "service_type" : "RandomBehaviorSpeech",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/speech" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 発話",
+        "description" : " pepper/naoが指定された文字列を発話する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/speech",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "text",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/speech",
+        "service_type" : "Speech",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/localvoicetotext" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "word",
+          "type" : "string"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi ローカル音声認識",
+        "description" : " pepper/naoがローカルで音声認識する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/localvoicetotext",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/localvoicetotext",
+        "service_type" : "LocalVoiceToText",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/touchhand" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi 手を触られたことを認識",
+        "description" : " pepper/naoが手を触られたことを認識する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/touchhand",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/touchhand",
+        "service_type" : "TouchHand",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/jwoqa_2step" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi JWOを用いて選ばれた質問に回答",
+        "description" : " 選ばれた質問の答えを発話する",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/jwoqa_2step",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "answers",
+          "type" : "string[]"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "q_num",
+          "type" : "string"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/jwoqa_2step",
+        "service_type" : "JWOQA_2Step",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    },
+    "rosservice.printeps/naoqi/breathing" : {
+      "outputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "output",
+          "type" : "None"
+        }
+      ],
+      "info" : {
+        "name" : " Naoqi息をする動作設定",
+        "description" : " Pepper/NAOの静止中の息をしているような動きのON/OFF",
+        "creator" : " Yamaguchi CREST PRINTEPS Team",
+        "docker" : "",
+        "updated" : "2019-08-04 10:50:38",
+        "category" : " printeps/naoqi",
+        "updater" : "printeps",
+        "created" : "2019-08-04 10:50:38"
+      },
+      "id" : "rosservice.printeps/naoqi/breathing",
+      "inputs" : [
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "ip",
+          "type" : "string"
+        },
+        {
+          "description" : "",
+          "kind" : "dynamic",
+          "name" : "state",
+          "type" : "bool"
+        }
+      ],
+      "properties" : [],
+      "ext" : {
+        "service_package" : "printeps_naoqi_modules",
+        "service_name" : "printeps/naoqi/breathing",
+        "service_type" : "Breathing",
+        "actor_class" : ""
+      },
+      "shape" : "rosservice"
+    }
+  }
+}
